@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>З 8 Березня</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        background-color: #f8f6f8;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>З 8 Березня <3</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <style>
-body {
-  background-color: #F8F6F8;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-img{
-            width: 20px; 
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
 
-            height: 20px; 
+      img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        animation: GFG 5s infinite linear;
+      }
 
-            display: block; 
+      @keyframes GFG {
+        0% {
+          transform: rotate(0deg) translateX(100px) rotate(0deg);
+        }
 
-            margin-left: auto; 
+        100% {
+          transform: rotate(-360deg) translateX(100px) rotate(360deg);
+        }
+      }
 
-            margin-right: auto; 
+      @media only screen and (min-width: 768px) {
+        .center {
+          width: 50px;
+        }
+      }
+    </style>
+  </head>
 
-            animation: GFG 5s infinite linear; 
-
-        } 
-
-  
-        @keyframes GFG { 
-
-            0% { 
-
-                transform: rotate(0deg)  
-
-                    translateX(100px) rotate(0deg); 
-
-            } 
-
-  
-            100% { 
-
-                transform: rotate(-360deg)  
-
-                    translateX(100px) rotate(360deg); 
-
-            } 
-
-        } 
-@media only screen and (min-width: 768px) {
-.center {
-  width: 50px;
-}
-
-}
-</style>
-</head>
-
-<body>
-  <main>
-    <!--<img src="heart.gif" alt="GFG" class="center">-->
-    <img src="photo.jpeg" alt="GFG">
-  </main>
-  <!-- <script src="index.js"></script> -->
-</body>
-
+  <body>
+    <main>
+      <!--<img src="heart.gif" alt="GFG" class="center">-->
+      <img src="photo.jpeg" alt="GFG" />
+    </main>
+    <!-- <script src="index.js"></script> -->
+  </body>
 </html>
