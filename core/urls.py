@@ -18,10 +18,13 @@ from django.urls import path
 from app1.views import index_page
 from app1.views import valentine_page
 from app1.views import march8_page
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),
     path('valentine', valentine_page),
     path('march8', march8_page),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
